@@ -17,9 +17,9 @@
   <script src="Build/VK.loader.js"></script>
   <script>
     const settings = {
-      dataUrl: "Build/2543d31745fd2fd28a21cbc6bbb6d447.data.unityweb",
-      frameworkUrl: "Build/5eb372304e4d0087f8b0806647a0c15a.js.unityweb",
-      codeUrl: "Build/f89395744646fd82f7498153405075e2.wasm.unityweb",
+      dataUrl: "Build/7e50cec12b25b494be9b70156ac03a1e.data.unityweb",
+      frameworkUrl: "Build/0cf5bac9003d52bee67c1ff8f0f24a9b.js.unityweb",
+      codeUrl: "Build/7dd0fd05a3f7221f3cca15c5795031a8.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Unconditional Games",
       productName: "waterpuzzle",
@@ -40,6 +40,9 @@
       });
     }, 500); // Wait half a second before loading. Makes page more responsive on reload.
   </script>
+
+  <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+  <script> vkBridge.send('VKWebAppInit'); </script>
 </body>
 
 </html>
